@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: node-app-backend
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: saddam-node-app.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: springboot-crud-svc
+            port:
+              number: 5000

@@ -1,0 +1,5 @@
+
+1. git clone 
+2. kubectl apply -f .
+3. api url ------- http://saddam-node-app.com/api/product
+4. get url http://saddam-node-app.com
